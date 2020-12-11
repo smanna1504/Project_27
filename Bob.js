@@ -2,9 +2,9 @@ class Bob{
     constructor(x){
         var options={
             isStatic:false,
-            restitution:0.3,
-            friction:0.5,
-            densiy:1.2
+            restitution:0,
+            friction:2,
+            densiy:3
         }
     
         this.body=Matter.Bodies.circle(x,350,25,options);
