@@ -5,7 +5,10 @@ this.offsetY=offsetY;
 var options={
     bodyA:body1,
     bodyB:body2,
-    pointB:{x:this.offsetX,y:this.offsetY}
+    pointB:{x:this.offsetX,y:this.offsetY},
+    stiffness:1.0,
+    angularStiffness:1.0,
+    length:220.0
 }
 this.rope=Constraint.create(options);
 World.add(world,this.rope);

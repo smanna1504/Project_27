@@ -41,8 +41,8 @@ rope1=new Rope(bobObject1.body,roof.body,-bobDiameter*10*2, 0);
 
 function draw() {
   rectMode(CENTER);
-  background(0);
-  
+  background(Infinity);
+  text("PRESS THE UP-ARROW KEY TO START",290,50);
   //console.log(windowWidth);
  // console.log(windowHeight);
 
@@ -62,7 +62,7 @@ bobObject2.display();
 
 function keyPressed(){
 	if(keyCode===UP_ARROW){
-        Matter.Body.applyForce(bobObject1.body,bobObject1.body.position,{x:25,y:25});
+        Matter.Body.applyForce(bobObject1.body,bobObject1.body.position,{x:100,y:-100});
 
 	}
 }
